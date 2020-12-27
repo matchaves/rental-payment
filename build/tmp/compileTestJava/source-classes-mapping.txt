@@ -1,0 +1,2 @@
+com/dvdrental/payment/PaymentApplicationTests.java
+ com.dvdrental.payment.PaymentApplicationTests

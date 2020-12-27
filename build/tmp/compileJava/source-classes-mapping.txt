@@ -1,2 +1,24 @@
+com/dvdrental/payment/repository/PaymentRepository.java
+ com.dvdrental.payment.repository.PaymentRepository
+com/dvdrental/payment/model/Film.java
+ com.dvdrental.payment.model.Film
 com/dvdrental/payment/PaymentApplication.java
  com.dvdrental.payment.PaymentApplication
+com/dvdrental/payment/model/Rental.java
+ com.dvdrental.payment.model.Rental
+com/dvdrental/payment/service/PaymentService.java
+ com.dvdrental.payment.service.PaymentService
+com/dvdrental/payment/dto/FilmDtoCost.java
+ com.dvdrental.payment.dto.FilmDtoCost
+com/dvdrental/payment/repository/RentalRepository.java
+ com.dvdrental.payment.repository.RentalRepository
+com/dvdrental/payment/controller/PaymentController.java
+ com.dvdrental.payment.controller.PaymentController
+com/dvdrental/payment/client/FilmClient.java
+ com.dvdrental.payment.client.FilmClient
+com/dvdrental/payment/dto/PaymentDto.java
+ com.dvdrental.payment.dto.PaymentDto
+com/dvdrental/payment/repository/InventoryRepository.java
+ com.dvdrental.payment.repository.InventoryRepository
+com/dvdrental/payment/model/Payment.java
+ com.dvdrental.payment.model.Payment
