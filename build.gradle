@@ -56,12 +56,32 @@ jib {
 	from {
 		image = 'openjdk:alpine'
 	}
+	container.appRoot = '/app'
+	container.entrypoint = ['java', '-jar', '/app/*.jar']
 	to {
 		image = 'colabdevops/rental-payment'
 		if (project.hasProperty("tag")) {   // precisa passar variavel -Ptag=100
 			tags = [project.getProperty("tag")]
+		} else {
+			tags = ["dev"]
 		}
-		tags = ["dev"]
+	}
+	container {
+		//jvmFlags = ['-Dmy.property=example.value', '-Xms512m', '-Xdebug']
+		mainClass = '/src/main/java/com.dvdrental.payment.PaymentApplication'
+		//args = ['some', 'args']
+		//ports = ['1000', '2000-2003/udp']
+		//labels = [key1:'value1', key2:'value2']
+		//format = 'OCI'
+	}
+	extraDirectories {
+		paths {
+			path {
+				from = 'build/libs/*.jar'
+				into = '/app/app.jar'
+				includes = ['single-file.xml']
+			}
+		}
 	}
 }
 
