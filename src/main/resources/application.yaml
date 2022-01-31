@@ -3,7 +3,7 @@ spring:
     database: POSTGRESQL
   datasource:
     platform: postgres
-    url: jdbc:postgresql://${IP_PG}:5432/dvdrental
+    url: jdbc:postgresql://${IP_PG:192.168.50.210}:5432/dvdrental
     username: postgres
     password: post123
   database:
@@ -23,4 +23,4 @@ management:
     prometheus:
       enabled: true
 server:
-  port : ${PORT:80}
+  port : ${PORT:8080}
